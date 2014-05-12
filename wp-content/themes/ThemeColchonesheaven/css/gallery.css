@@ -1,0 +1,22 @@
+/* Contendio de la página Galería */
+#main #page_gallery {
+    float: left;
+    padding: 12px 48px;
+    width: 904px;
+    background-color: #fff;
+    text-align: justify;
+    line-height: 14px;
+}
+
+#cont_gallery{
+	float: left;
+	padding: 20px 0;
+	width: 904px;
+	color: #989898;
+	font-size: 11px;
+}
+.titulo_gallery{ 
+	font-size: 13px;
+	color: #1d9db4; 
+	clear: both;
+}

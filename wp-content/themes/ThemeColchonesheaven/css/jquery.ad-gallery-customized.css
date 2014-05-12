@@ -1,0 +1,57 @@
+.ad-gallery {
+    margin: 0;
+    padding: 9px 14px 0 10px;
+    float: left;
+    width: 879px;
+    height: 419px;
+    background: url(../images/bg_gallery.jpg);
+}
+.ad-gallery .ad-image-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 879px;
+    height: 370px;
+    text-align: center;
+}
+.ad-gallery .ad-image-wrapper .ad-prev, .ad-gallery .ad-image-wrapper .ad-next, .ad-gallery .ad-controls {
+    display: none;
+}
+.ad-gallery .ad-nav {
+    margin: 0 auto;
+    padding: 0;
+    width: 230px;
+}
+.ad-gallery .ad-back {
+    top: 15px;
+    left: -42px;
+    margin: 0;
+    padding: 0;
+    width: 19px;
+    height: 14px;
+    background: transparent url(../images/arrow-left.gif) no-repeat;
+}
+.ad-gallery .ad-forward {
+    top: 15px;
+    right: -42px;
+    margin: 0;
+    padding: 0;
+    width: 19px;
+    height: 14px !important;
+    background: transparent url(../images/arrow-right.gif) no-repeat;
+}
+.ad-gallery .ad-thumbs li a {
+  display: block;
+  margin: 0;
+  padding: 8px 0 0 0;
+  width: 56px;
+  height: 34px;
+  background: transparent url(../images/bg_thumb.gif) no-repeat;
+  text-align: center;
+}
+.ad-gallery .ad-thumbs li a.ad-active {
+  background: transparent url(../images/bg_thumb_over.gif) no-repeat;
+}
+.ad-gallery .ad-thumbs li a img {
+  border: none !important;
+  display: inline;
+}
