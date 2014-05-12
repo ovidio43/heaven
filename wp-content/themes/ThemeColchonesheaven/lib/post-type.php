@@ -4,7 +4,9 @@ function custom_post_type_init() {
         array("slug" => "banner_principal", "plural" => "Banner Principal", "singular" => "Banner Principal", "rewrite" => "banner_principal", "public" => true, "archive" => true, "supports" => array('title', 'editor', 'thumbnail')),
         array("slug" => "producto", "plural" => "Productos", "singular" => "Producto", "rewrite" => "producto", "public" => true, "archive" => true, "supports" => array('title', 'editor', 'thumbnail')),
         array("slug" => "oferta", "plural" => "Ofertas", "singular" => "Oferta", "rewrite" => "oferta", "public" => true, "archive" => true, "supports" => array('title', 'editor', 'thumbnail')),
-        array("slug" => "noticia", "plural" => "Noticias", "singular" => "Noticia", "rewrite" => "noticia", "public" => true, "archive" => true, "supports" => array('title', 'editor', 'thumbnail'))
+        array("slug" => "noticia", "plural" => "Noticias", "singular" => "Noticia", "rewrite" => "noticia", "public" => true, "archive" => true, "supports" => array('title', 'editor', 'thumbnail')),
+        array("slug" => "video", "plural" => "Videos", "singular" => "Video", "rewrite" => "video", "public" => true, "archive" => true, "supports" => array('title', 'editor', 'thumbnail')),
+        array("slug" => "imagen", "plural" => "Imagenes", "singular" => "Imagen", "rewrite" => "imagen", "public" => true, "archive" => true, "supports" => array('title', 'editor', 'thumbnail'))
     );
     foreach ($post_types as $pt) {
         $supports = array('title', 'editor', 'post_tags', 'thumbnail', 'excerpt', "comments");

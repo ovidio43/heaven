@@ -9,35 +9,35 @@ get_header(); ?>
     <div class="wrapper_content">
     	<?php products_important(''); ?>
         <article class="single_product">
-            <ul class="slider_dres">
-            	<li>
-            		<div class="content_dres">
-            		 	<h1>DISTRIBUIDORES AUTORIZADOS</h1>
-            		 	<p> and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
-            		 	<figure class="img_dres">
-            		 		<div class="bg_image_dres" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/dres_one_img.jpg');"></div>
-            		 	</figure>
-            		 	<div class="context_fone">
-            		 		 <h5> Telefono : </h5>
-            		 		 <span class="namber_dres">5656556565</span>
-            		 	</div>
-            		</div>
-            	</li>
-            	<li>
-            		<div class="content_dres">
-            		 	<h1>DISTRIBUIDORES AUTORIZADOS</h1>
-            		 	<p> and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
-            		 	<figure class="img_dres">
-            		 		<div class="bg_image_dres" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/dres_two_img.jpg');"></div>
-            		 	</figure>
-            		 	<div class="context_fone">
-            		 		 <h5> Telefono : </h5>
-            		 		 <span class="namber_dres">565</span>
-            		 	</div>
-            		</div>
-            	</li>
-            </ul>
-        </article>           
+            <?php  
+                    while (have_posts()) : the_post(); ?>
+                        <h1><?php the_title(); ?></h1>
+                        <?php the_content(); 
+                        $rows = get_field('group_distribuidores'); ?>
+                        <ul class="slider_dres">
+                            <?php 
+                                  if ($rows) { 
+                                       for ($i=0; $i<count($rows); $i++) {
+                                            $image_attributes =wp_get_attachment_image_src( $rows[$i]['img_distribuidores'], "full" );   
+                                            ?> 
+                                            <li>
+                                                <div class="content_dres">
+                                                    <figure class="img_dres">
+                                                        <div class="bg_image_dres" style="background-image:url('<?php echo $image_attributes[0]; ?>')"></div>
+                                                    </figure>
+                                                    <div class="context_fone">
+                                                         <h5> Telefono : </h5>
+                                                         <span class="namber_dres"><?php  echo $rows[$i]['content_distribuidores']; ?></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                           <?php        }  
+                                   }            
+                            ?>
+                        </ul>
+            <?php   endwhile;
+                    wp_reset_query(); ?>
+        </article>             
     </div>
 </section>
 <?php get_footer(); ?>

@@ -17,8 +17,9 @@
         <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/bootstrap.min.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bxslider/jquery.bxslider.min.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.validate.min.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/curvycorners.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.ad-gallery.js"></script>
+         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/gallery/jquery.ad-gallery.min.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/gallery/jquery.ad-gallery.js"></script>
+         <!--<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/gallery/gallery.js"></script>-->
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/heaven.js"></script>
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/source/jquery.fancybox.js?v=2.1.5"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>

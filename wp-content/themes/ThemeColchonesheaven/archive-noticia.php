@@ -25,7 +25,7 @@
                                             <figure class="news_img">
                                                 <img src="<?php echo $featured[0]; ?>"/>
                                             </figure>
-                                            <?php the_content(); ?>
+                                            <?php the_excerpt(); ?>
                                         </li>
                          <?php      endwhile; 
                                     wp_reset_query();

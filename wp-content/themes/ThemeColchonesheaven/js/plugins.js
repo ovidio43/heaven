@@ -43,9 +43,9 @@
          controls:false,
          pause:4000
      });
-     jQuery('.ad-gallery').adGallery({thumb_opacity: 1});
-     /*var heaven = heaven || new com.as.Heaven();
-     heaven.setupStudio();*/
+     //jQuery('.ad-gallery').adGallery({thumb_opacity: 1});
+     //var heaven = heaven || new com.as.Heaven();
+     ///heaven.setupStudio();
     
 
 }());

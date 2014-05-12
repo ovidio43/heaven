@@ -23,8 +23,9 @@ jQuery(document).ready(function() {
 	jQuery(".menu li a").prepend('<div class="grouplog_menu"><span class="log_menu_left"> :.</span><span class="logmenu-leftr-hover"></span></div>');
 	verif_menu_active();
     
-    //var heaven = heaven || new com.as.Heaven();
-   //heaven.setupStudio();
+    var heaven = heaven || new com.as.Heaven();
+    heaven.setupStudio();
+
     jQuery("#form_1").validate({
             rules: {
                 nombre: {required: true},
