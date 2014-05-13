@@ -83,7 +83,6 @@ ul{
     top:0px;
     bottom:0px;
     margin: auto;
-
 }
 .grouplog_menu{
     float:left;
@@ -139,6 +138,13 @@ ul{
         &:last-child{
             margin-right: 0px;
         }
+        &.active a .grouplog_menu .log_menu_left {
+            display:none !important;
+        } 
+        &.active a .grouplog_menu .logmenu-leftr-hover{
+            display:block !important;
+        } 
+        
     }
 } 
 #site_content{
@@ -149,6 +155,109 @@ ul{
         overflow: hidden;
         width: 100% ;
         color: #989898;
+        padding-bottom:15px; 
+        .wrapp_cvideo{
+            position: relative;
+            margin: 0;
+            padding: 9px 14px 0 10px;
+            float: left;
+            width: 100%;
+            height: 419px;
+            background: url('../img/bg_gallery.jpg');
+            .bx-wrapper .bx-controls-direction a.disabled{
+                display: block !important;
+            }
+            .bx-wrapper .bx-controls-direction a{
+                margin-top: -8px !important;
+            }
+            .bx-wrapper .bx-next{
+                right: -35px !important;
+            }
+            .bx-wrapper .bx-prev{
+                left: -35px !important;
+            }
+            .bx-prev{
+                background:url('../img/arrow-left.gif') no-repeat !important;
+                width:19px !important;
+                height:14px !important;
+                &:hover{
+                    background:url('../img/arrow-left.gif') no-repeat !important;
+                    width:19px !important;
+                    height:14px !important;
+                }
+            }
+            .bx-next{
+                background:url('../img/arrow-right.gif') no-repeat !important;
+                width:19px !important;
+                height:14px !important;
+                &:hover{
+                    background:url('../img/arrow-right.gif') no-repeat !important;
+                    width:19px !important;
+                    height:14px !important; 
+                }
+            }
+            .video_list{
+                width: 100%;
+                height: 90%;
+                display: flex;
+                iframe, embed{
+                    text-align: center;
+                    margin: auto;
+                    display: block;
+                    vertical-align: middle;
+                    max-height: 95%;
+                    max-width: 95%;
+                }
+            }
+            .block_list_video{
+                position: relative;
+                width: 40%;
+                display: block;
+                margin: auto;
+                .video_slider{
+                    width: 100%;
+                    li{
+                        position: relative;
+                        .dir_video{
+                            position: relative;
+                            padding: 5px;
+                            &.select_video{
+                                background-color: #989898;
+                            }
+                            .log_vedeo{
+                                position: absolute;
+                                background-image:url('../img/log_video.png');
+                                background-repeat: no-repeat;
+                                width: 12px;
+                                height: 10px;
+                                z-index: 10;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                margin: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .wrapp_active_post{
+            position: relative;
+            width: 100%;
+            a{
+                padding: 5px;
+                color: #1d9db4;
+                display: inline-block;
+                text-decoration: none;
+            }
+            .active_post{
+                background-color: #d6d6d6;
+            }
+            .no_active_post{
+                background-color:#f6f6f6;
+            }
+        }
         h1{
             font-size: 1.17em;
             display: block;

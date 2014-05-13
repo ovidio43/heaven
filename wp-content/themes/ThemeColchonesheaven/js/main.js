@@ -2,20 +2,24 @@ function verif_menu_active(){
     if(jQuery('#id_menu_active').length) {
         var val_id_menu=jQuery('#id_menu_active').attr("class");
         if (val_id_menu!=''){
-            if (val_id_menu!="home"){
-                jQuery(".menu li").each(function(){
-                     var val_split=jQuery(this).children('a').attr("href").split('/');
-                     if(val_split[1] == val_id_menu) {
-                        jQuery(this).addClass('active');
-                        return false;
-                    } 
-                })
+            if ((val_id_menu!='video') && (val_id_menu!='imagen')){
+                if (val_id_menu!="home"){
+                    jQuery(".menu li").each(function(){
+                         var val_split=jQuery(this).children('a').attr("href").split('/');
+                         if(val_split[1] == val_id_menu) {
+                            jQuery(this).addClass('active');
+                           // return false;
+                        } 
+                    })
+                }else{
+                    jQuery(".menu li.home").addClass('active');
+                }
             }else{
-                jQuery(".menu li.home").addClass('active');
+                jQuery(".menu li.imgvideo").addClass('active');
             }
         }
-        jQuery('.active a .grouplog_menu .log_menu_left').css({"display":"none"});
-        jQuery('.active a .grouplog_menu .logmenu-leftr-hover').css({"display":"block"});
+        //jQuery('.active a .grouplog_menu .log_menu_left').css({"display":"none"});
+        //jQuery('.active a .grouplog_menu .logmenu-leftr-hover').css({"display":"block"});
     }
 }
 

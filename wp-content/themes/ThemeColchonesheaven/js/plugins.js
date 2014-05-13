@@ -43,6 +43,19 @@
          controls:false,
          pause:4000
      });
+     $('.video_slider').bxSlider({
+         mode:'horizontal',
+         minSlides: 3,
+         maxSlides: 4,
+         slideWidth: 40,
+         slideMargin: 4,
+         speed:1500,
+         auto:false,
+         pager:true,
+         controls:true,
+         pause:4000
+     });
+     
      //jQuery('.ad-gallery').adGallery({thumb_opacity: 1});
      //var heaven = heaven || new com.as.Heaven();
      ///heaven.setupStudio();

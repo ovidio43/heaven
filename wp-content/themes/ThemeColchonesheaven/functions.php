@@ -70,6 +70,8 @@ function colchones_heaven_image_sizes() {
     add_image_size( 'thumb-product_gallery',  450,99999, false);  //music header is smaller 
     add_image_size( 'thumb-product',300,308, false);  //news thumbs
     add_image_size( 'slider-home',  1000,308, false);  // only for home, slider
+    add_image_size( 'thumb-imagen-small',37,31, false);  //news thumbs
+    add_image_size( 'gallery-imagen',481,370, false);  // only for home, slider
 }
 add_action( 'init', 'colchones_heaven_image_sizes', 0 );
 
