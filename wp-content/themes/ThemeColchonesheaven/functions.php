@@ -62,6 +62,7 @@ function products_important($selectid_post){ ?>
           </ul>
       </article>
 <?php } 
+
 function colchones_heaven_image_sizes() {
   //large(9999x656 crop no) for modal gallery, mid(9999x440 crop no) for image banners, thumb(300x300 crop yes) for minor callouts  will be on wp default
     add_image_size( 'callout-home',  300,206, true);  // callouts for home only
@@ -74,9 +75,6 @@ function colchones_heaven_image_sizes() {
     add_image_size( 'gallery-imagen',481,370, false);  // only for home, slider
 }
 add_action( 'init', 'colchones_heaven_image_sizes', 0 );
-
-
-
 ?>
 
 

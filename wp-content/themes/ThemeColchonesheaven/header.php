@@ -27,17 +27,17 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-            <header id="header" class="wrapper">
-                <div class="wrapper_content">
-                    <figure class="logo center_vertical">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"/>
-                        </a>
-                    </figure>
-                    <?php 
-                        wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'items_wrap' => '<ul class="menu center_vertical">%3$s</ul>')); 
-                    ?>
-                </div>
-            </header>
+        <header id="header" class="wrapper">
+            <div class="wrapper_content">
+                <figure class="logo center_vertical">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"/>
+                    </a>
+                </figure>
+                <?php 
+                    wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'items_wrap' => '<ul class="menu center_vertical">%3$s</ul>')); 
+                ?>
+            </div>
+        </header>
         
         

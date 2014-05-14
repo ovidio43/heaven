@@ -17,16 +17,20 @@ get_header();
             </div>
             <div class="block_product_right post_news_dim">
                   <ul class="post_news">
-                     <?php $social_face_obj = new ProdFacebook("YusufCatStevens",5);
+                     <?php $social_face_obj = new ProdFacebook("Colchones.Heaven.Bolivia",4);
                            $face=$social_face_obj->get_data();
                            for ($i=0; $i<count($face); $i++) { ?>
                                 <li>
                                     <?php if ( !empty($face[$i]['picture']) ) { ?>
+                                            <a href="https://www.facebook.com/Colchones.Heaven.Bolivia" target="_blank">
                                               <figure class="news_img">
                                                    <img src="<?php echo $face[$i]['picture']; ?> "/>
                                               </figure>
+                                            <a>
                                     <?php  } ?>
-                                    <p><?php echo $face[$i]['post_text']; ?></p>
+                                             <a href="https://www.facebook.com/Colchones.Heaven.Bolivia" target="_blank">
+                                                 <p><?php echo $face[$i]['post_text']; ?></p>
+                                             </a>
                                 </li>
                       <?php } ?>
                   </ul>

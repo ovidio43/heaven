@@ -8,7 +8,6 @@ function verif_menu_active(){
                          var val_split=jQuery(this).children('a').attr("href").split('/');
                          if(val_split[1] == val_id_menu) {
                             jQuery(this).addClass('active');
-                           // return false;
                         } 
                     })
                 }else{
@@ -18,8 +17,6 @@ function verif_menu_active(){
                 jQuery(".menu li.imgvideo").addClass('active');
             }
         }
-        //jQuery('.active a .grouplog_menu .log_menu_left').css({"display":"none"});
-        //jQuery('.active a .grouplog_menu .logmenu-leftr-hover').css({"display":"block"});
     }
 }
 
