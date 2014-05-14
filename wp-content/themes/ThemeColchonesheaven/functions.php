@@ -4,6 +4,7 @@ register_nav_menu('primary', __('Primary Menu'));
 add_theme_support('post-thumbnails');
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
+
 function themecolchones_heaven_wp_title( $title, $sep ) {
     global $paged, $page;
     if ( is_feed() )
@@ -27,40 +28,40 @@ function special_nav_class($classes, $item){
 }
 function products_important($selectid_post){ ?>
   <article class="product_home">
-          <ul class="product_detail">
-              <?php   $type = 'producto';
-                      $args=array(
-                        'post_type' => $type,
-                        'post_status' => 'publish',
-                        'orderby' => 'date',
-                        'order' => 'DESC',
-                        'posts_per_page' =>3
-                      );                 
-                      $myposts = new WP_Query( $args );
-                      if ( $myposts->have_posts() ) : 
-                            while ( $myposts->have_posts() ):$myposts->the_post();   
-                                $featured = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'thumb-product',false); 
-                                $cat_active="";
-                                if((!empty($selectid_post))&&($selectid_post==get_the_ID())){
-                                    $cat_active="select_product";
-                                }
-                                ?>
-                                <li>
-                                  <a class="ptable_detail" href="<?php the_permalink(); ?>" >
-                                      <div class="log_product_background" style="background-image:url('<?php echo $featured[0]; ?>');"></div>
-                                      <div class="title_product_hover <?php echo $cat_active; ?>" >
-                                          <div class="log_product" style="background-image:url('<?php echo get_template_directory_uri()."/img/shield_1.png"; ?>');"></div>
-                                          <span class="hover_fortitle"><?php the_title(); ?></span>
-                                      </div>
-                                  </a>  
-                                </li>
-              <?php         endwhile; 
-                            wp_reset_query();
-                            else: ?>
-                            <p><?php _e('Sorry, no slider matched your criteria.'); ?></p>
-              <?php   endif; ?>       
-          </ul>
-      </article>
+      <ul class="product_detail">
+            <?php   $type = 'producto';
+                    $args=array(
+                      'post_type' => $type,
+                      'post_status' => 'publish',
+                      'orderby' => 'date',
+                      'order' => 'DESC',
+                      'posts_per_page' =>3
+                    );                 
+                    $myposts = new WP_Query( $args );
+                    if ( $myposts->have_posts() ) : 
+                          while ( $myposts->have_posts() ):$myposts->the_post();   
+                              $featured = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'thumb-product',false); 
+                              $cat_active="";
+                              if((!empty($selectid_post))&&($selectid_post==get_the_ID())){
+                                  $cat_active="select_product";
+                              }
+                              ?>
+                              <li>
+                                <a class="ptable_detail" href="<?php the_permalink(); ?>" >
+                                    <div class="log_product_background" style="background-image:url('<?php echo $featured[0]; ?>');"></div>
+                                    <div class="title_product_hover <?php echo $cat_active; ?>" >
+                                        <div class="log_product" style="background-image:url('<?php echo get_template_directory_uri()."/img/shield_1.png"; ?>');"></div>
+                                        <span class="hover_fortitle"><?php the_title(); ?></span>
+                                    </div>
+                                </a>  
+                              </li>
+            <?php         endwhile; 
+                          wp_reset_query();
+                          else: ?>
+                          <p><?php _e('Sorry, no slider matched your criteria.'); ?></p>
+            <?php   endif; ?>       
+        </ul>
+    </article>
 <?php } 
 
 function colchones_heaven_image_sizes() {
@@ -76,6 +77,3 @@ function colchones_heaven_image_sizes() {
 }
 add_action( 'init', 'colchones_heaven_image_sizes', 0 );
 ?>
-
-
-

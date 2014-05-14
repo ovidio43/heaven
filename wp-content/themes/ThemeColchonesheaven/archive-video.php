@@ -6,8 +6,8 @@ get_header(); ?>
         <?php products_important(''); ?>
         <article class="single_product">
             <div class="wrapp_active_post">
-                <a href="/imagen/" class="no_active_post">Imagenes</a>
-                <a href="/video/" class="active_post">Videos</a>
+                <a href="/demo/imagen/" class="no_active_post">Imagenes</a>
+                <a href="/demo/video/" class="active_post">Videos</a>
             </div>
             <div class="wrapp_cvideo">
                 <?php
@@ -64,7 +64,7 @@ get_header(); ?>
                                         }
                                          ?>
                                         <li>
-                                            <a href="/video/?id_post=<?php echo get_the_ID(); ?>">
+                                            <a href="/demo/video/?id_post=<?php echo get_the_ID(); ?>">
                                                 <figure class="dir_video <?php echo $select; ?>">
                                                     <img src="<?php echo $featured[0]; ?>" width="37" height="31"/>
                                                     <span class="log_vedeo"></span>

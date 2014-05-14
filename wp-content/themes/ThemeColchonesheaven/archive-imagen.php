@@ -6,8 +6,8 @@ get_header(); ?>
         <?php products_important(''); ?>
         <article class="single_product">
             <div class="wrapp_active_post">
-                <a href="/imagen/" class="active_post">Imagenes</a>
-                <a href="/video/" class="no_active_post">Videos</a>
+                <a href="/demo/imagen/" class="active_post">Imagenes</a>
+                <a href="/demo/video/" class="no_active_post">Videos</a>
             </div>
             <div id="gallery" class="ad-gallery">
                 <div class="ad-image-wrapper"></div>
