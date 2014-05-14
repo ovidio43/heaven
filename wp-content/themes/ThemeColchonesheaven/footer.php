@@ -1,6 +1,6 @@
 
             <footer id="footer" class="wrapper">
-                <div class="wrapper_content">
+                <div class="wrapper_content height_footer">
                     <span class="autor_develop center_vertical">Sitio Desarrollando por altra</span>
                     <?php 
                         wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'items_wrap' => '<ul class="menu center_vertical">%3$s</ul>')); 

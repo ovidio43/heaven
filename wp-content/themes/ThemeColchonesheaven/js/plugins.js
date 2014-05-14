@@ -21,9 +21,9 @@
     }   
 
      $('.banner_home').bxSlider({
-         mode:'horizontal',
+         mode:'fade',
          speed:1000,
-         auto:false,
+         auto:true,
          pager:false,
          controls:true
      });

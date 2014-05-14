@@ -11,7 +11,7 @@
         <title><?php wp_title( '|', true, 'right' ); ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico?fd=sdfdf" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
@@ -28,7 +28,7 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         <header id="header" class="wrapper">
-            <div class="wrapper_content">
+            <div class="wrapper_content height_header">
                 <figure class="logo center_vertical">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"/>
