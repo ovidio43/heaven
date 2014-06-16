@@ -102,16 +102,12 @@ ul{
         height: 16px; 
     }
 }
-.height_header{
-    height: 285px;
-}
-.height_footer{
-    height: 127px;
-}
+
 #header{
     height: 285px;
     background: #1d9db4 url('../img/bg_header.jpg');
     color: #fff;
+    display: flex;
     .logo {
         position: absolute;
         width: 180px;
@@ -302,7 +298,7 @@ ul{
                            display: inline-block; 
                            color: #5ca398;
                            font-weight: bold;
-                           font-size: 20px;
+                           font-size: 25px;
                         }
                         .namber_dres{
                             display: inline-block;
@@ -383,7 +379,6 @@ ul{
             }
             h3{
                 font-size: 15px;
-                font-weight: bold;
             }
             p{
                 text-align: justify;
@@ -428,6 +423,9 @@ ul{
                         padding-left: 15px;
                         float: left;
                         color:#989898;
+                        &.cover_today{
+                            width: 100%;
+                        }
                         span{
                             color:#989898 !important;
                         }
@@ -626,6 +624,7 @@ ul{
 }
 
 #footer{
+    display: flex;
     height: 127px;
     background: #002637 url('../img/bg_footer.jpg');
     .autor_develop{
