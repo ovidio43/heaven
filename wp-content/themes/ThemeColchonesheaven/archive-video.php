@@ -15,26 +15,21 @@
                     'countRows' => '6'
                 );
                 $youtube = new youtubeFeed($args);
-                $data = $youtube->getFeedByUserName();
-                ?>
+                $data = $youtube->getFeedByUserName(); ?>
                 <div class="video_list">   
                     <?php                    
                     $embed = $data[0]['embedUrl'];
                     if (isset($_GET['embed'])) {
                         $embed = base64_decode($_GET['embed']);
-                    }
-                    ?>
+                    } ?>
                     <embed width="420" height="345" type="application/x-shockwave-flash" src="<?php echo $embed; ?>">                    
                 </div>
-
                 <div class="block_list_video">
                     <ul class="video_slider">     
                         <?php
-                        foreach ($data as $value) {
-                            ?>
+                        foreach ($data as $value) { ?>
                             <li>
                                 <a href="?embed=<?php echo base64_encode($value['embedUrl']); ?>">
-                                <!--<a href="<?php echo $_SERVER["REQUEST_URI"]; ?>?embed=<?php echo $value['embedUrl']; ?>">-->
                                     <figure class="dir_video <?php echo $select; ?>">
                                         <img src="<?php echo $value['thumbnail']; ?>" title="<?php echo $value['title']; ?>" width="37" height="31"/>
                                         <span class="log_vedeo"></span>
@@ -42,9 +37,7 @@
                                 </a>
                             </li>
                             <?php
-                        }
-                        ?>
-<!--<p>sorry</p>-->                        
+                        } ?>
                     </ul>
                 </div>
             </div>
