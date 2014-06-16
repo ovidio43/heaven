@@ -26,7 +26,7 @@ get_header(); ?>
                                                         <div class="bg_image_dres" style="background-image:url('<?php echo $image_attributes[0]; ?>')"></div>
                                                     </figure>
                                                     <div class="context_fone">
-                                                         <h5> Telefono : </h5>
+                                                         <h5> Teléfono : </h5>
                                                          <span class="namber_dres"><?php  echo $rows[$i]['content_distribuidores']; ?></span>
                                                     </div>
                                                 </div>

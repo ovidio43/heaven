@@ -21,7 +21,7 @@ get_header();
                            $face=$social_face_obj->get_data();
                            for ($i=0; $i<count($face); $i++) { ?>
                                 <li>
-                                    <?php  $val_util=''; 
+                                    <?php  $val_util=""; 
                                        if ( !empty($face[$i]['picture']) ) { ?>
                                             <a href="https://www.facebook.com/Colchones.Heaven.Bolivia" target="_blank">
                                               <figure class="news_img">
@@ -33,7 +33,7 @@ get_header();
                                           }
                                     ?>
                                              <a href="https://www.facebook.com/Colchones.Heaven.Bolivia" target="_blank">
-                                                 <p class="<?php echo $cover_today; ?>"><?php echo $face[$i]['post_text']; ?></p>
+                                                 <p class="<?php echo $val_util; ?>"><?php echo $face[$i]['post_text']; ?></p>
                                              </a>
                                 </li>
                       <?php } ?>
